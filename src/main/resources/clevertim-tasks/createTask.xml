@@ -65,20 +65,17 @@
         <!--Construct payload for optional parameters -->
         <script language="js">
             <![CDATA[
-  		    payload = mc.getPayloadJSON();
-  				
-			 var startDate = mc.getProperty("uri.var.startDate");
-			 var endDate = mc.getProperty("uri.var.endDate");
-														
-			 if ( startDate != null && startDate != "") { 				
-			    payload.startDate = eval("("+startDate+")");			
-			 }	
-			 if ( endDate != null && endDate != "") { 				
-			    payload.endDate = eval("("+endDate+")");			
-			 }	
-          																						
-			 mc.setPayloadJSON(payload);	
-	     ]]>
+            payload = mc.getPayloadJSON();
+            var startDate = mc.getProperty("uri.var.startDate");
+            var endDate = mc.getProperty("uri.var.endDate");
+            if ( startDate != null && startDate != "") {
+            payload.startDate = eval("("+startDate+")");
+            }
+            if ( endDate != null && endDate != "") {
+            payload.endDate = eval("("+endDate+")");
+            }
+            mc.setPayloadJSON(payload);
+            ]]>
         </script>
         <call>
             <endpoint>

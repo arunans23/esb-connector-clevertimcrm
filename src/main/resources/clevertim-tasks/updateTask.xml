@@ -105,9 +105,8 @@
 	  		      payload ["is_completed"] = isCompleted;
 	  		   }
 	  		}
-	  				
 			mc.setPayloadJSON(payload);
-	     ]]>
+	     	]]>
         </script>
         <call>
             <endpoint>

@@ -37,19 +37,17 @@
         <!--Construct payload for optional parameters -->
         <script language="js">
             <![CDATA[
-	  	     payload = mc.getPayloadJSON();
-	  		 var noteId = mc.getProperty("uri.var.noteId");
-	  		 var taskId = mc.getProperty("uri.var.taskId");
-	  				
-			 if ( noteId != null && noteId != "") { 				
-			    payload.nid = noteId;			
+	  	    payload = mc.getPayloadJSON();
+	  		var noteId = mc.getProperty("uri.var.noteId");
+	  		var taskId = mc.getProperty("uri.var.taskId");
+			if ( noteId != null && noteId != "") {
+			payload.nid = noteId;
 			}
 			if ( taskId != null && taskId != "") { 				
-		       payload.tid = taskId;			
+		    payload.tid = taskId;
 			}
-					
 			mc.setPayloadJSON(payload);	
-		]]>
+		    ]]>
         </script>
         <call>
             <endpoint>
