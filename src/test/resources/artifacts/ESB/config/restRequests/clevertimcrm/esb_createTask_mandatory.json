@@ -1,5 +1,5 @@
 {
-"apiUrl":"%s(apiUrl)",
-"apiKey":"%s(apiKey)",
-"name":"%s(taskName)"
+  "apiUrl": "%s(apiUrl)",
+  "apiKey": "%s(apiKey)",
+  "name": "%s(taskName)"
 }

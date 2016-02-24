@@ -1,5 +1,5 @@
 {
-"apiUrl":"%s(apiUrl)",
-"apiKey":"%s(apiKey)",
-"name":"%s(opportunityName)"
+  "apiUrl": "%s(apiUrl)",
+  "apiKey": "%s(apiKey)",
+  "name": "%s(opportunityName)"
 }

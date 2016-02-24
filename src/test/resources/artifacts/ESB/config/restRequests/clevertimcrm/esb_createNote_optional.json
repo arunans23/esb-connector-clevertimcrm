@@ -1,7 +1,17 @@
 {
-"apiUrl":"%s(apiUrl)",
-"apiKey":"%s(apiKey)",
-"description":"%s(description)",
-"customer": %s(contactId),
-"case": %s(caseId)
+  "apiUrl": "%s(apiUrl)",
+  "apiKey": "%s(apiKey)",
+  "description": "%s(description)",
+  "customer":
+  %
+  s
+  (
+  contactId
+  ),
+  "case":
+  %
+  s
+  (
+  caseId
+  )
 }
