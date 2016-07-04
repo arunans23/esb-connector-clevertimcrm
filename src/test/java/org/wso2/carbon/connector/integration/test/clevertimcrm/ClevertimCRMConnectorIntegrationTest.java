@@ -44,7 +44,7 @@ public class ClevertimCRMConnectorIntegrationTest extends ConnectorIntegrationTe
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("clevertimcrm-connector-1.0.1");
+        init("clevertimcrm-connector-1.0.2-SNAPSHOT");
 
         esbRequestHeadersMap.put("Content-Type", "application/json");
 
