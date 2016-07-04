@@ -18,19 +18,19 @@
 
 package org.wso2.carbon.connector.integration.test.clevertimcrm;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
+import org.apache.axiom.om.util.Base64;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.wso2.connector.integration.test.base.ConnectorIntegrationTestBase;
 import org.wso2.connector.integration.test.base.RestResponse;
-import org.apache.axiom.om.util.Base64;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ClevertimCRMConnectorIntegrationTest extends ConnectorIntegrationTestBase {
 
@@ -44,7 +44,7 @@ public class ClevertimCRMConnectorIntegrationTest extends ConnectorIntegrationTe
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("clevertimcrm-connector-1.0.1-SNAPSHOT");
+        init("clevertimcrm-connector-1.0.1");
 
         esbRequestHeadersMap.put("Content-Type", "application/json");
 
